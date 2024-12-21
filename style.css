@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .titulo {
+    background-color: #303030;
+    height: 475px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: left;    
+}
+
+header .titulo div {
+    margin-left: 15px;
+    font-size: 23px;
+}
+
+.titulo {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.titulo h4 {
+    position: absolute;
+    margin-bottom: -30px;
+}
+
+
+
+#colunas {
+    width: 1440px;
+    height: 229px;
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+    font-size: 20px;
+    margin-top: 70px;
+    
+}
+
+.informacao{
+    text-align: center;
+    display: block;
+}
+
+
+#teste {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.container {
+    position: relative;
+    left: 130px;
+    bottom: 60px;
+}
+
+
+.container-img {
+    position: relative;
+    right: 70px;
+    bottom: 60px;
+}
+
+.depoimento {
+    text-align: left;
+    justify-content: space-around;
+    margin-top: 240px;
+}
+
+
+.depoimento p {
+    font-size: 1.2em;
+    color: rgb(93, 93, 93);
+}
+
+
+.imagem {
+    padding-left: 340px;
+}
+
+
+
+
+
+footer {
+    background-color: #303030;
+    height: 638px;  
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.cc {
+    transform: translateY(50%);
+    position: absolute;
+}
+
+
+.titu-footer {
+    color: white;
+    margin-bottom: 30px;
+    position: relative;
+    bottom: 10px;
+    font-size: 20px;
+}
+
+
+.barra {
+    width: 508px;
+    height: 72px;
+    margin: 20px;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 2em;
+}
+
+
+.barra::placeholder {
+    text-align: left;
+    padding-left: 14px;
+    font-size: -22em;
+    position: relative;
+    top: 2px;
+    left: 15px;
+}
+
+.button-form {
+    background-color: #C07212;
+    width: 286px;
+    height: 74px;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    font-weight: bold;
+    color: #ffff;
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.244);
+}
+
+.button-form:hover {
+    transform: translateY(-5%);
+    transition: 0.8s;
+}
