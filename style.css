@@ -4,9 +4,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 header .titulo {
     background-color: #303030;
     height: 475px;
+    width: 200%;
     color: white;
     display: flex;
     align-items: center;
@@ -24,9 +29,15 @@ header .titulo div {
     display: flex;
 }
 
+.titulo h1 {
+    position: relative;
+    left: 18px;
+}
+
 .titulo h4 {
     position: absolute;
-    margin-bottom: -30px;
+    left: 40px;
+    font-size: 0.7em;
 }
 
 
@@ -39,12 +50,18 @@ header .titulo div {
     columns: auto;
     font-size: 20px;
     margin-top: 70px;
-    
+    position: relative;
+    left: 30px;
 }
 
 .informacao{
-    text-align: center;
+    text-align: left;
     display: block;
+}
+
+.informacao h2 {
+    position: relative;
+    left: 5px;
 }
 
 
@@ -70,6 +87,14 @@ header .titulo div {
     text-align: left;
     justify-content: space-around;
     margin-top: 240px;
+    position: relative;
+    right: 60px;
+}
+
+.depoimento h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
@@ -80,7 +105,8 @@ header .titulo div {
 
 
 .imagem {
-    padding-left: 340px;
+    position: relative;
+    left: 120px;
 }
 
 
@@ -90,6 +116,7 @@ header .titulo div {
 footer {
     background-color: #303030;
     height: 638px;  
+    
     display: flex;
     text-align: center;
     justify-content: center;
@@ -107,26 +134,40 @@ footer {
     position: relative;
     bottom: 10px;
     font-size: 20px;
+    position: relative;
+    bottom: 70px;
 }
 
 
 .barra {
     width: 508px;
     height: 72px;
-    margin: 20px;
+    top: 1661px;
+    left: 466px;
+    gap: 0px;
     border-radius: 10px 10px 10px 10px;
-    font-size: 2em;
+    opacity: 0px;
+    margin-top: 40px;
 }
 
+.form {
+    position: relative;
+    bottom: 60px;
+}
 
 .barra::placeholder {
     text-align: left;
     padding-left: 14px;
-    font-size: -22em;
+    font-size: 2em;
     position: relative;
-    top: 2px;
+    top: 15px;
     left: 15px;
 }
+
+input:focus {
+    bottom: 3px;
+    font-size: 34px;
+  }
 
 .button-form {
     background-color: #C07212;
@@ -141,6 +182,7 @@ footer {
     position: relative;
     top: 15px;
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.244);
+    margin-top: 40px;
 }
 
 .button-form:hover {
